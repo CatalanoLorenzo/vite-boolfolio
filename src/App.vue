@@ -40,7 +40,7 @@ export default {
       <div class="row">
         <div class="col">
           <div class="card" v-for="project in projects">
-            <img class="card-img-top" :src="this.baseApi + project.cover" alt="Title">
+            <img class="card-img-top" :src="this.baseApi +'storage/'+ project.cover" alt="Title">
             <div class="card-body">
               <h4 class="card-title">{{ project.title }}</h4>
               <p class="card-text">
