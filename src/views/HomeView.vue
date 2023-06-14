@@ -38,9 +38,12 @@ export default {
     <main>
         <div class="container">
             <div class="row row-cols-2">
-
                 <div class="card col" v-for="project in projects.data">
+                    <router-link :to="{ name: 'single-project', params: {slug: project.slug} }">
+
                     <img class="card-img-top" :src="this.baseApi + 'storage/' + project.cover" alt="Title">
+                </router-link>
+
                     <div class="card-body">
                         <h4 class="card-title">{{ project.title }}</h4>
                         <p class="card-text">
@@ -57,8 +60,8 @@ export default {
                             </div>
                         </div>
                     </div>
-
                 </div>
+
                 <div>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
