@@ -1,2 +1,29 @@
 // Import all of Bootstrap's CSS
 @import "/node_modules/bootstrap/scss/bootstrap";
+
+main{
+    section{
+        .card-header{
+            background-color: rgba(58, 0, 128, 0.581);
+        }
+        .imgprofile{
+            box-shadow: 0 0 1rem rgb(58, 0, 128);
+            img{
+                aspect-ratio: 1;
+                object-position: top;
+            }
+        }   
+        .hrow{
+            background-color: rgb(58, 0, 128);
+            height: 0.25rem;
+        } 
+    }
+    .presentation
+    {
+        h2{
+            background-color: rgba(58, 0, 128, 0.581);
+
+        }
+    }
+    
+}
