@@ -11,16 +11,18 @@ export default {
 </script>
 <template>
     <main>
-        <div class="container">
-            <h1 class="text-center"><strong>Contact Me</strong></h1>
-            <div class="row row-cols-1 row-cols-md-2 g-2">
-                
-                <div class="col " v-for="item in contacts">
-                    <div class="card">
+        <div class="contacts bg-light position-fixed rounded-3  mx-auto d-flex flex-column position-absolute">
+
+        </div>
+        <h1 class="pt-5"><strong>Contact Me</strong></h1>
+        <div class="opacity-100 container py-5 mt-5 mx-auto z-3 presentation position-relative h-100">
+            <div class="row py-5 my-5 m-0 row-cols-1 row-cols-md-3 gap-5 m-auto align-items-md-center justify-content-around">
+                <div class="col my-5  fs-4 p-0 fw-bold text-light-emphasis display-1  rounded-5 shadow-lg  " v-for="item in contacts">
+                    <div class="shadow-lg card rounded-5 mx-auto  ">
                         <div class="card-header p-3">
-                            <h2>
+                            <h4>
                                 {{item.message}}
-                            </h2>
+                            </h4>
                         </div>
                         <div class="card-body text-center">
                             <a class="btn btn-primary" v-if="item.btnname == 'GitHub'" :href="item.content" :innerHTML="(item.btnname) + (item.svg)"></a>
