@@ -4,6 +4,7 @@ import AboutView from './views/AboutView.vue';
 import ContactView from './views/ContactView.vue';
 import ProjectsView from './views/ProjectsView.vue';
 import SingleProject from './views/SingleProject.vue';
+import PageNotFound from './views/PageNotFound.vue'
 
 
 const router = createRouter({
@@ -30,10 +31,15 @@ const router = createRouter({
             'component': ProjectsView
         },
         {
-            path: '/projects/:slug',
-            name: 'single-project',
-            component: SingleProject
+            'path': '/projects/:slug',
+            'name': 'single-project',
+            'component': SingleProject
         },
+        {
+            'path': '/:pathMatch(.*)*',
+            'name': 'pagenotfound404',
+            'component': PageNotFound
+        }
     ]
 })
 

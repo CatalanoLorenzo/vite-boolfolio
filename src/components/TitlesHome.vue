@@ -18,11 +18,11 @@ export default {
     <section>
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 g-5">
-                <div class="col imgprofile text-center  overflow-hidden p-0 ">
-                    <img src="../assets/img/profiloimg.jpg" alt="imgprofile" class="w-100 object-fit-cover ">
+                <div class="col imgprofile text-center  overflow-hidden p-0 my-5 ">
+                    <img src="../assets/img/profiloimg.jpg" alt="imgprofile" class="h-100 w-100 object-fit-cover ">
                 </div>
                 <div class="col ">
-                    <div class="card " v-for="item,index in info" :class="index > 0 ? 'my-3' : '' ">
+                    <div class="card " v-for="item,index in info" :class="index > 0 ? 'my-5' : '' ">
                         <div class="card-header">
                             <h1 class="text-center text-white p-4">{{ item.title }}</h1>
                         </div>

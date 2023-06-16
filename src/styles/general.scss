@@ -1,6 +1,11 @@
 // Import all of Bootstrap's CSS
 @import "/node_modules/bootstrap/scss/bootstrap";
-
+header{
+    .navbar{
+        background-color:rgba(98, 25, 123, 0.641) ;
+        margin-bottom: 2rem;
+    }
+}
 main{
     section{
         .card-header{

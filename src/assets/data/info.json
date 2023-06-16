@@ -1,13 +1,31 @@
 [
     {
-        "title" : "Lorenzo Catalano",
+        "title": "Lorenzo Catalano",
         "content": [
             "Full Stack Web Developer",
             "Perito Capotecnico Industriale in Elettrotecnica e Automazione"
         ]
     },
     {
-        "title" : "Presentation",
+        "title": "Presentation",
         "content": "Sono un lavoratore orientato al risultato, con ottime capacità di comunicazione nonché capace nel lavorare in gruppo."
+    },
+    {
+        "title": "Competenze",
+        "content": [
+            "Disegnatore CAD 2D/3D",
+            "Progettazione",
+            "Social Media Menager",
+            "Risoluzione di problemi",
+            "Controllo qualità",
+            "Concettualizzazione di progetti",
+            "Laravel",
+            "VueJs",
+            "MySQL",
+            "PHP",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ]
     }
 ]

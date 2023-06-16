@@ -18,7 +18,14 @@ export default {
                 .get(url)
                 .then(response => {
                     console.log(response);
-                    this.projects = response.data.projects;
+                    if (response.data.success) {
+                        this.projects = response.data.projects;
+
+                    } else {
+                        this.$router.push({
+                            name: "pagenotfound404"
+                        });
+                    }
                 })
                 .catch(error => {
                     console.error(error.message);

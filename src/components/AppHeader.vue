@@ -10,15 +10,26 @@ export default {
 }
 </script>
 <template>
-    <section>
+    <header>
 
-        <ul class="nav nav-tabs" id="navId" role="tablist">
-            <li class="nav-item" v-for="menu_item in MenuHeader">
-                <router-link class="nav-link" :to="{ name: menu_item.toLowerCase() }">
-                    <div>{{menu_item}}</div>
-                </router-link>
-            </li>
-            
-        </ul>
-    </section>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+
+            <button class="btn  navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsnavbar"
+                aria-expanded="false" aria-controls="collapsnavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="collapsnavbar">
+                <router-link class="navbar-brand" :to="{ name: MenuHeader[0].toLowerCase() }">MY WEBSITE</router-link>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item" v-for="menu_item in MenuHeader" >
+                        <router-link class="nav-link" :to="{ name: menu_item.toLowerCase() }" v-if="!(menu_item == 'Home')">
+                            <div>{{ menu_item }}</div>
+                        </router-link>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
 </template>
