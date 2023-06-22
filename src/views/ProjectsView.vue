@@ -38,27 +38,25 @@ export default {
 </script>
 <template>
     <main>
-        <h1>My Projects</h1>
-        <div class="container">
-            <div class="opacity-100 container  pb-0 mx-auto z-3 presentation position-relative">
-                <div class="row p-0 m-0 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-8  g-5 m-auto ">
-                    <div class="col fs-4 p-0 fw-bold text-light-emphasis display-1  rounded-5 shadow-lg "
+        <video class="video-bg w-100 position-fixed object-fit-cover z-0 opacity-50" src="../assets/media/video-bg.mp4" autoplay
+        muted loop>
+    </video>
+        <div class="container p-5">
+            <h1 class="pt-5 pb-5 text-darks">My Projects</h1>
+            <div class="opacity-100 container  pb-0 mx-auto z-1 presentation position-relative">
+                <div class="row p-0 m-0 row-cols-1 row-cols-sm-2 row-cols-md-3  row-cols-xl-8">
+                    <div class="col fs-4 p-0 fw-bold text-darks display-1  rounded-5 shadow-lg "
                         v-for="project in projects.data">
-                        <div class="shadow-lg card rounded-5 mx-auto  ">
-                            <router-link :to="{ name: 'single-project', params: { slug: project.slug } }">
+                        <div class="shadow-lg card rounded-5 mx-3 my-3">
+                            <router-link :to="{ name: 'single-project', params: { slug: project.slug } }" class="text-decoration-none text-darks" >
                                 <img class="card-img-top rounded-3 border-1 border"
-                                    :src="this.baseApi + 'storage/' + project.cover" alt="Title">
-                                <div class="card-body text-light">
-                                    <h5 class="card-title">{{ project.title }}</h5>
-                                    <p class="card-text">
-                                        {{ project.content }}
-                                    </p>
+                                    :src="this.baseApi + 'storage/' + project.cover" height="300" alt="Title">
+                                <div class="card-body text-dark-emphasis text-decoration-none ">
+                                    <h4 class="card-title text-decoration-none">{{ project.title }}</h4>
                                 </div>
                                 <div class="card-footer">
                                     <span class="badge bg-primary">{{ project.type.name }}</span>
-
                                 </div>
-
                             </router-link>
                         </div>
                     </div>
@@ -66,7 +64,7 @@ export default {
             </div>
         </div>
 
-        <div>
+        <div class="d-flex justify-content-center pt-5">
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
                     <!-- <a @click="getProjects(links.at(0).url)"  class="page-link" v-if="link.url">Previous</a> -->
