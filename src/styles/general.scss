@@ -11,13 +11,17 @@
     --bg-card: #303952;
     --title: #3F4B3B;
     --btn: #C19027;
+    --bg-logo: #636dcb;
 
 }
 
 body {
     background-color: var(--blue-night);
     header {
-        background-color: var(--blue-night);
+        .container-fluid{
+
+            background-color: var(--bg-logo);
+        }
 
     }
 

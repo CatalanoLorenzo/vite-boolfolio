@@ -126,15 +126,11 @@ export default {
 
                     <h3 class="who-i fade-in watch fw-bold ">Chi sono?</h3>
                     <h4 class=" fade-in watch fw-bold ">
-                        Sono un Web Developer con una passione innata per il risultato e la funzionalità.<br>
-                        La mia principale forza risiede nella mia capacità di lavorare in team, collaborando con altri
-                        professionisti per raggiungere obiettivi comuni.<br>
-                        Sono sempre pronto ad affrontare nuove sfide e ad imparare continuamente, poiché credo che il
-                        miglioramento personale sia fondamentale per avere
-                        successo nel settore tecnologico in continua evoluzione.<br>
-                        La mia determinazione nel perseguire la crescita personale mi ha portato a intraprendere il corso
-                        Boolean, dove ho avuto l'opportunità di
-                        mettere in pratica le mie competenze e realizzare i miei progetti.
+                        Fin da sempre appassionato di tecnologia e del mondo informatico, 
+                        ho deciso di intraprendere il percorso formativo di Boolean,
+                         dove ho  potuto: migliorare e mettere in pratica le mie competenze per realizzare dei veri progetti. <br>
+                          Il mio punto di forza è l'essere portato al lavoro in team affinché possa confrontarmi e migliorarmi per  
+                           stabilire un ambiente lavorativo sereno e costruttivo.
                     </h4>
 
                 </div>
@@ -155,19 +151,7 @@ export default {
             <div class="row h-75 justify-content-center align-items-center row-cols-1 row-cols-md-2">
                 <div class="col fade-in watch p-5">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators d-flex justify-content-around pt-5 mt-5">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-    
-                        </ol>
+                        
                         <div class="carousel-inner h-75">
                             <div class="carousel-item active">
                                 <img class="d-block w-100 ratio-16x9" src="../assets/img/logoCSS.svg" alt="First slide">
